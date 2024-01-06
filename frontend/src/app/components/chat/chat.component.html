@@ -1,0 +1,31 @@
+<div class="chat">
+    <app-sidebar></app-sidebar>
+    <ngContainer *ngIf="currentUserRole === 'medic'" ngClass="medic-section">
+        <div class="patients-list">
+          <div *ngFor="let patient of assignedPatients" class="patient" style="background-color: #BDE3FF;">
+            {{ patient.firstName + " " + patient.lastName }}
+          </div>
+        </div>
+      </ngContainer>
+    <div class="chat-content">
+      <div class="chat-header">
+        <h2 class="doctor-name">{{ doctorName }}</h2>
+        <hr class="header-divider">
+      </div>
+      <div class="message-container">
+        <div class="message"
+                *ngFor="let message of messages"
+                [ngClass]="{ 
+                    'sent-message': message.sent_by === userId, 
+                    'received-message': message.sent_by !== userId
+        }">
+            {{ message.text }}
+          </div>          
+      </div>
+      <div class="input-container">
+        <input type="text" [(ngModel)]="newMessage" placeholder="Type your text here">
+        <button class="send-button" (click)="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+  

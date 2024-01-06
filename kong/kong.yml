@@ -1,0 +1,25 @@
+_format_version: "2.1"
+
+services:
+  - name: backend
+    url: http://backend:5000/
+    routes:
+      - name: map-service-route
+        paths: 
+          - /api/map
+          
+  - name: mongo-express
+    url: http://mongo-express:8081/
+    routes:
+      - name: mongo-service-route
+        paths:
+          - /mongo
+
+plugins:
+  - name: rate-limiting
+    config: 
+      minute: 10
+      limit_by: ip
+      policy: local
+
+  - name: bot-detection

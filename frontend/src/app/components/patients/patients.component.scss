@@ -1,0 +1,114 @@
+* {
+  background-color: #BDE3FF;
+}
+
+.patients {
+  display: flex;
+  height: 100vh;
+}
+
+.patients-content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.section1 {
+  width: 419.5px;
+  background-color: #BDE3FF;
+  border-right: 1px solid #0028AD;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.section2 {
+  flex-grow: 1;
+  background-color: #BDE3FF;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.section-header {
+  color: #0028AD;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.patient-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-item {
+  height: 53px;
+  background-color: #479DFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.active-patient {
+  background-color: #1A75FF;
+  color: white;
+}
+
+.test-block {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.test-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.test-label {
+  font-weight: bold;
+  width: 120px;
+  background-color: white;
+}
+
+.test-value {
+  margin-left: 10px;
+  background-color: white;
+}
+
+hr {
+  border-color: #0028AD;
+}
+
+.prescription-block {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.prescription-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.prescription-description {
+  margin-left: 10px;
+  background-color: white;
+}

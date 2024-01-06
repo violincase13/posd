@@ -1,0 +1,40 @@
+<div class="register-page">
+    <div class="register-container">
+      <h1 class="register-title">Create Account</h1>
+      
+      <label for="firstName">First Name</label>
+      <input type="text" placeholder="" [(ngModel)]="firstName" class="register-input">
+      
+      <label for="lastName">Last Name</label>
+      <input type="text" placeholder="" [(ngModel)]="lastName" class="register-input">
+      
+      <label for="username">Username</label>
+      <input type="text" placeholder="" [(ngModel)]="username" class="register-input">
+      
+      <label for="email">E-Mail Address</label>
+      <input type="email" placeholder="" [(ngModel)]="email" class="register-input">
+      
+      <label for="password">Password</label>
+      <input type="password" placeholder="" [(ngModel)]="password" class="register-input">
+      
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" placeholder="" [(ngModel)]="confirmPassword" class="register-input">
+      
+      <label for="role">Role</label>
+      <select [(ngModel)]="role" class="register-input">
+        <option value="" disabled selected>Select</option>
+        <option value="patient">Patient</option>
+        <option value="doctor">Medic</option>
+      </select>
+      <div class="terms-checkbox">
+        <input type="checkbox" id="terms-checkbox" [(ngModel)]="agreeTerms" class="checkbox-input">
+        <label for="terms-checkbox" class="checkbox-label">Agree with <b>Terms and Conditions</b> in order to submit!</label>
+      </div>
+      <button class="register-button" (click)="register()" [disabled]="!agreeTerms">Submit</button>
+      <div class="login-link-container">
+        Already have an account?
+        <a href="/login" class="login-link">Log in</a>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,50 @@
+<div class="patients">
+  <app-sidebar></app-sidebar>
+  <div class="patients-content">
+    <div class="section1">
+      <h2 class="section-header">Patient List</h2>
+      <hr class="section-divider">
+      <div class="patient-list">
+        <div class="patient-item" *ngFor="let patient of patients; let i = index" (click)="showPatientDetails(i)">
+          {{ patient.firstName + " " + patient.lastName }}
+        </div>
+      </div>
+    </div>
+    <div class="section2" *ngIf="activePatient !== null">
+      <h2 class="section-header">Medical Tests</h2>
+      <div class="test-block" *ngFor="let test of medicalRecords">
+        <div class="test-item">
+          <div class="test-label">Date:</div>
+          <div class="test-value">{{ test.date }}</div>
+        </div>
+        <div class="test-item">
+          <div class="test-label">Hemogram:</div>
+          <div class="test-value">{{ test.hemogram }}</div>
+        </div>
+        <div class="test-item">
+          <div class="test-label">Urea:</div>
+          <div class="test-value">{{ test.urea }}</div>
+        </div>
+        <div class="test-item">
+          <div class="test-label">Creatine:</div>
+          <div class="test-value">{{ test.creatine }}</div>
+        </div>
+        <div class="test-item">
+          <div class="test-label">ALT:</div>
+          <div class="test-value">{{ test.ALT }}</div>
+        </div>
+        <div class="test-item">
+          <div class="test-label">AST:</div>
+          <div class="test-value">{{ test.AST }}</div>
+        </div>
+      </div>
+      <hr>
+      <h2 class="section-header">Prescriptions</h2>
+      <div class="prescription-block" *ngFor="let prescription of prescriptions">
+        <div class="prescription-item">
+          <div class="prescription-description">{{ prescription.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

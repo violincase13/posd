@@ -1,0 +1,21 @@
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu-item">
+            <a routerLink="/medical-records" *ngIf="userRole === 'patient'" routerLinkActive="active">Medical Records</a>
+            <a routerLink="/patients" *ngIf="userRole === 'medic'" routerLinkActive="active">Patients</a>
+            <hr class="sidebar-separator">
+        </li>
+        <li class="sidebar-menu-item">
+            <a routerLink="/chat" routerLinkActive="active">Chat</a>
+            <hr class="sidebar-separator">
+        </li>
+        <li class="sidebar-menu-item">
+            <a routerLink="/profile" routerLinkActive="active">Profile</a>
+            <hr class="sidebar-separator">
+        </li>
+    </ul>
+    <div class="sidebar-footer">
+      <a (click)="logout()">Log out</a>
+    </div>
+  </div>
+  

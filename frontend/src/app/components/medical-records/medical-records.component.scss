@@ -1,0 +1,73 @@
+
+.medical-records {
+    display: flex;
+    height: 100vh;
+    background-color: #BDE3FF;    
+}
+
+.medical-records-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.medical-records-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.test-block, .prescription-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.test-item, .prescription-item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.test-label, .prescription-description {
+    font-weight: bold;
+    width: 100px;
+}
+
+.test-value, .prescription-description {
+    margin-left: 10px;
+}
+
+.test-block-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-color: #0028AD;
+}
+
+.prescription-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .prescription-item {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .prescription-box {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  

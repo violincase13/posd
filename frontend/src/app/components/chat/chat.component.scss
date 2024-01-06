@@ -1,0 +1,93 @@
+.medic-section {
+  width: 173px;
+  height: 100vh;
+  background-color: #a4d4ff;
+
+  .patients-list {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .patient {
+      padding: 20px 44px;
+      border-radius: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.chat {
+  display: flex;
+  height: 100vh;
+}
+
+.chat-content {
+  flex-grow: 1;
+  background-color: #BDE3FF;
+  padding: 20px;
+}
+
+.chat-header {
+  margin-bottom: 20px;
+}
+
+.doctor-name {
+  font-size: 24px;
+  color: black;
+}
+
+.header-divider {
+  border: none;
+  border-top: 1px solid black;
+}
+
+.message-container {
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  width: 500px;
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  background-color: #479DFF;
+
+  &.sent-message {
+    align-self: flex-end;
+    background-color: #1A75FF;
+  }
+
+  &.received-message {
+    background-color: #479DFF;
+    align-self: flex-start;
+  }
+}
+
+.input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.send-button {
+  background-color: #479DFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}

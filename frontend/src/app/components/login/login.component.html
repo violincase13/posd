@@ -1,0 +1,19 @@
+<div class="login-page">
+    <div class="login-container">
+      <h1 class="login-title">Login</h1>
+      
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter the username" [(ngModel)]="username" class="login-input">
+      
+      <label for="username">Password</label>
+      <input type="password" placeholder="Enter the password" [(ngModel)]="password" class="login-input">
+      
+      <button class="login-button" (click)="login()">Login</button>
+      
+      <div class="register-link">
+        Don't have an account?
+        <a href="/register" class="register-link">Create one</a>
+      </div>
+    </div>
+  </div>
+  

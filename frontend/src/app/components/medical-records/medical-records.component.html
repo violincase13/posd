@@ -1,0 +1,46 @@
+<div class="medical-records shared-background">
+    <app-sidebar></app-sidebar>
+    <div class="medical-records-content">
+      <h2 class="medical-records-subtitle">Medical Tests</h2>
+      <ng-container *ngFor="let test of medicalRecords">
+        <div class="test-block-wrapper">
+          <div class="test-block">
+            <div class="test-item">
+              <div class="test-label">Date:</div>
+              <div class="test-value">{{ test.date }}</div>
+            </div>
+            <div class="test-item">
+              <div class="test-label">Hemogram:</div>
+              <div class="test-value">{{ test.hemogram }}</div>
+            </div>
+            <div class="test-item">
+              <div class="test-label">Urea:</div>
+              <div class="test-value">{{ test.urea }}</div>
+            </div>
+            <div class="test-item">
+              <div class="test-label">Creatine:</div>
+              <div class="test-value">{{ test.creatine }}</div>
+            </div>
+            <div class="test-item">
+              <div class="test-label">ALT:</div>
+              <div class="test-value">{{ test.ALT }}</div>
+            </div>
+            <div class="test-item">
+              <div class="test-label">AST:</div>
+              <div class="test-value">{{ test.AST }}</div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <hr>
+      <h2 class="medical-records-subtitle">Prescriptions</h2>
+      <div class="prescription-block" *ngFor="let prescription of prescriptions">
+        <div class="prescription-item">
+          <div class="prescription-box">
+            <div class="prescription-description">{{ prescription.description }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

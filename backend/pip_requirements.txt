@@ -1,0 +1,12 @@
+flask
+pymongo
+trycourier
+auth0-python
+flask-cors
+python-dotenv
+python-jose
+six
+pika
+prometheus_client
+pydantic-mongo
+pydantic
