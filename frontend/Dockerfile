@@ -11,5 +11,5 @@ RUN npm run build --prod
 
 FROM nginx:1.20.1
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build-step /app/dist/ehealth/ /usr/share/nginx/html
+COPY --from=build-step /app/dist/* /usr/share/nginx/html/
 EXPOSE 80

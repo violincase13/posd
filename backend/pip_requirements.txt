@@ -1,4 +1,4 @@
-flask
+flask==1.1.4
 pymongo
 trycourier
 auth0-python
@@ -10,3 +10,5 @@ pika
 prometheus_client
 pydantic-mongo
 pydantic
+MarkupSafe==1.1.1
+
