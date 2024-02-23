@@ -1,85 +1,45 @@
-version: '3.8'
+version: '3'
 
 services:
   frontend:
-    image: frontend:latest
-    depends_on:
-      - mongo-db
-      - backend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
-      - "4200:80"
+      - "3000:3000"
+    depends_on:
+      - backend
     networks:
-      - rest-network
+      - my_network
 
   backend:
-    image: backend:latest
-    depends_on:
-      - mongo-db
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     ports:
-      - 7000:7000
-      - 5000:5000
-    volumes:
-      - ../backend:/backend
-    environment:
-      - MONGO_HOST=db_mongo
+      - "3001:3001"
     networks:
-      - rest-network
-      - internal
+      - my_network
 
-  mongo-db:
-    image: mongo:latest
-    hostname: db_mongo
+  postgres:
+    image: postgres:latest
     environment:
-      MONGO_INITDB_DATABASE: database
-      MONGODB_DATA_DIR: /data/db
-      MONDODB_LOG_DIR: /dev/null
+      POSTGRES_DB: users
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin1234
     ports:
-      - "27017:27017"
-    volumes:
-      - db_data:/data/db
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-    networks:
-      - mongo-compose-network
-      - rest-network
+      - "5433:5432"
 
-  mongo-express:
-    image: mongo-express:latest
-    depends_on:
-      - mongo-db
+  pgadmin:
+    image: dpage/pgadmin4
     environment:
-      ME_CONFIG_MONGODB_SERVER: mongo-db
-      ME_CONFIG_MONGODB_PORT: 27017
-    restart: unless-stopped
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin1234
     ports:
-      - "8081:8081"
-    networks:
-      - mongo-compose-network
-      - internal
-
-  kong:
-    image: kong:latest
-    volumes:
-      - ./kong:/usr/local/kong/declarative #injectarea fisierului de configurare la calea specificata
-    environment:
-      KONG_DATABASE: 'off'
-      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml #trebuie specificat unde anume se va gasi fisierul de configurare
-      KONG_PROXY_ACCESS_LOG: /dev/stdout
-      KONG_ADMIN_ACCESS_LOG: /dev/stdout
-      KONG_PROXY_ERROR_LOG: /dev/stderr
-      KONG_ADMIN_ERROR_LOG: /dev/stderr
-      KONG_ADMIN_LISTEN: 0.0.0.0:8001, 0.0.0.0:8444 ssl
-    ports:
-        - 80:8000
-        - 443:8443
-        - 8001:8001
-        - 8444:8444
-    networks:
-      - internal
+      - "5050:80"        
 
 networks:
-    mongo-compose-network:
-    rest-network:
-    internal:
+  my_network:
 
-volumes:
-    db_data: {}
+
+

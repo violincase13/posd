@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patients>
+    <patient id="1">
+        <personalData id="101">
+            <firstName>Alex</firstName>
+            <lastName>Doe</lastName>
+            <email>Alexdoe@example.com</email>
+            <password>securepassword</password>
+            <personalToken>ABC123</personalToken>
+            <address>123 Main St, Cityville</address>
+            <age>30</age>
+            <gender>Male</gender>
+            <insurance>XYZ Insurance</insurance>
+        </personalData>
+        <appointments>
+            <appointment id="201">
+                <type>General Checkup</type>
+                <date>2024-01-15</date>
+                <hour>13:00</hour>
+                <doctor id="3">Dr. Alex Ordean</doctor>
+                <location>Main Hospital</location>
+                <duration>60 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+            <appointment id="202">
+                <type>General Checkup</type>
+                <date>2024-01-16</date>
+                <hour>13:00</hour>
+                <doctor id="3">Dr. Alex Ordean</doctor>
+                <location>Main Hospital</location>
+                <duration>30 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+            <appointment id="203">
+                <type>General Checkup</type>
+                <date>2024-01-17</date>
+                <hour>13:00</hour>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <location>Main Hospital</location>
+                <duration>30 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+        </appointments>
+        <medicalRecords>
+            <record id="301">
+                <date>2023-12-01</date>
+                <name>Blood Test</name>
+                <noteType>Lab Report</noteType>
+                <doctor id="3">Dr. Alex Ordean</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy id="5">As. Maria Popescu</lastUpdatedBy>
+            </record>
+            <record id="302">
+                <date>2023-12-02</date>
+                <name>HPV Test</name>
+                <noteType>Lab Report</noteType>
+                <doctor id="3">Dr. Alex Ordean</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy id="5">As. Maria Popescu</lastUpdatedBy>
+            </record>
+            <record id="303">
+                <date>2023-12-02</date>
+                <name>EKG Test</name>
+                <noteType>X-Ray</noteType>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy>Dr. Ana Stanciu</lastUpdatedBy>
+            </record>
+        </medicalRecords>
+        <medications>
+            <medication id="401">
+                <name>Aspirin</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>
+            <medication id="402">
+                <name>Nurofen</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>    
+            <medication id="403">
+                <name>Codein</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>      
+            <medication id="404">
+                <name>Methylofren</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>  
+            <medication id="405">
+                <name>Strawbery Syrup</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>                                       
+        </medications>
+    </patient>
+    <patient id="2">
+        <personalData id="101">
+            <firstName>Emma</firstName>
+            <lastName>Alexson</lastName>
+            <email>emmaj@example.com</email>
+            <password>securepassword</password>
+            <personalToken>ABC123</personalToken>
+            <address>789 Pine St, Villageland</address>
+            <age>40</age>
+            <gender>Female</gender>
+            <insurance>PQR Insurance</insurance>
+        </personalData>
+        <appointments>
+            <appointment id="201">
+                <type>General Checkup</type>
+                <date>2024-01-15</date>
+                <hour>13:00</hour>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <location>Main Hospital</location>
+                <duration>60 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+            <appointment id="202">
+                <type>General Checkup</type>
+                <date>2024-01-16</date>
+                <hour>13:00</hour>
+                <doctor id="3">Dr. Alex Ordean</doctor>
+                <location>Main Hospital</location>
+                <duration>30 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+            <appointment id="203">
+                <type>General Checkup</type>
+                <date>2024-01-17</date>
+                <hour>13:00</hour>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <location>Main Hospital</location>
+                <duration>30 minutes</duration>
+                <comments>Routine checkup</comments>
+                <coveredByInsurance>true</coveredByInsurance>
+            </appointment>
+        </appointments>
+        <medicalRecords>
+            <record id="301">
+                <date>2023-12-01</date>
+                <name>Blood Test</name>
+                <noteType>Lab Report</noteType>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy id="5">As. Maria Popescu</lastUpdatedBy>
+            </record>
+            <record id="302">
+                <date>2023-12-02</date>
+                <name>HPV Test</name>
+                <noteType>Lab Report</noteType>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy id="5">As. Maria Popescu</lastUpdatedBy>
+            </record>
+            <record id="303">
+                <date>2023-12-02</date>
+                <name>EKG Test</name>
+                <noteType>X-Ray</noteType>
+                <doctor id="4">Dr. Ana Stanciu</doctor>
+                <lastUpdated>2024-01-10</lastUpdated>
+                <lastUpdatedBy>Dr. Ana Stanciu</lastUpdatedBy>
+            </record>
+        </medicalRecords>
+        <medications>
+            <medication id="401">
+                <name>Aspirin</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>
+            <medication id="402">
+                <name>Nurofen</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>    
+            <medication id="403">
+                <name>Codein</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>      
+            <medication id="404">
+                <name>Methylofren</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>  
+            <medication id="405">
+                <name>Strawbery Syrup</name>
+                <dose>75mg</dose>
+                <frequency>Once daily</frequency>
+                <quantity>30 tablets</quantity>
+                <duration>2 weeks</duration>
+                <condition>Pain Relief</condition>
+                <provider>Pharmacy XYZ</provider>
+                <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                <prescribedAt>2024-01-05</prescribedAt>
+            </medication>                                       
+        </medications>
+    </patient>
+    <patient id="100">
+            <personalData id="101">
+                <firstName>Jenna</firstName>
+                <lastName>Alexson</lastName>
+                <email>jennamj@example.com</email>
+                <password>securepassword</password>
+                <personalToken>ABC123</personalToken>
+                <address>567 Pine St, Villageland</address>
+                <age>34</age>
+                <gender>Female</gender>
+                <insurance>PQR Insurance</insurance>
+            </personalData>
+            <appointments>
+                <appointment id="201">
+                    <type>General Checkup</type>
+                    <date>2024-01-15</date>
+                    <hour>13:00</hour>
+                    <doctor id="3">Dr. Alex Ordean</doctor>
+                    <location>Main Hospital</location>
+                    <duration>60 minutes</duration>
+                    <comments>Routine checkup</comments>
+                    <coveredByInsurance>true</coveredByInsurance>
+                </appointment>
+                <appointment id="202">
+                    <type>General Checkup</type>
+                    <date>2024-01-16</date>
+                    <hour>13:00</hour>
+                    <doctor id="3">Dr. Alex Ordean</doctor>
+                    <location>Main Hospital</location>
+                    <duration>30 minutes</duration>
+                    <comments>Routine checkup</comments>
+                    <coveredByInsurance>true</coveredByInsurance>
+                </appointment>
+                <appointment id="203">
+                    <type>General Checkup</type>
+                    <date>2024-01-17</date>
+                    <hour>13:00</hour>
+                    <doctor id="3">Dr. Alex Ordean</doctor>
+                    <location>Main Hospital</location>
+                    <duration>30 minutes</duration>
+                    <comments>Routine checkup</comments>
+                    <coveredByInsurance>true</coveredByInsurance>
+                </appointment>
+            </appointments>
+            <medicalRecords>
+                <record id="301">
+                    <date>2023-12-01</date>
+                    <name>Blood Test</name>
+                    <noteType>Lab Report</noteType>
+                    <doctor id="4">Dr. Ana Stanciu</doctor>
+                    <lastUpdated>2024-01-10</lastUpdated>
+                    <lastUpdatedBy id="6">As. Mihai Popescu</lastUpdatedBy>
+                </record>
+                <record id="302">
+                    <date>2023-12-02</date>
+                    <name>HPV Test</name>
+                    <noteType>Lab Report</noteType>
+                    <doctor id="4">Dr. Ana Stanciu</doctor>
+                    <lastUpdated>2024-01-10</lastUpdated>
+                    <lastUpdatedBy id="6">As. Mihai Popescu</lastUpdatedBy>
+                </record>
+                <record id="303">
+                    <date>2023-12-02</date>
+                    <name>EKG Test</name>
+                    <noteType>X-Ray</noteType>
+                    <doctor id="4">Dr. Ana Stanciu</doctor>
+                    <lastUpdated>2024-01-10</lastUpdated>
+                    <lastUpdatedBy>Dr. Ana Stanciu</lastUpdatedBy>
+                </record>
+            </medicalRecords>
+            <medications>
+                <medication id="401">
+                    <name>Aspirin</name>
+                    <dose>75mg</dose>
+                    <frequency>Once daily</frequency>
+                    <quantity>30 tablets</quantity>
+                    <duration>2 weeks</duration>
+                    <condition>Pain Relief</condition>
+                    <provider>Pharmacy XYZ</provider>
+                    <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                    <prescribedAt>2024-01-05</prescribedAt>
+                </medication>
+                <medication id="402">
+                    <name>Nurofen</name>
+                    <dose>75mg</dose>
+                    <frequency>Once daily</frequency>
+                    <quantity>30 tablets</quantity>
+                    <duration>2 weeks</duration>
+                    <condition>Pain Relief</condition>
+                    <provider>Pharmacy XYZ</provider>
+                    <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                    <prescribedAt>2024-01-05</prescribedAt>
+                </medication>    
+                <medication id="403">
+                    <name>Vitamin C</name>
+                    <dose>60mg</dose>
+                    <frequency>Once daily</frequency>
+                    <quantity>30 tablets</quantity>
+                    <duration>2 weeks</duration>
+                    <condition>Pain Relief</condition>
+                    <provider>Pharmacy XYZ</provider>
+                    <prescribedBy>Dr. Ana Stanciu</prescribedBy>
+                    <prescribedAt>2024-01-05</prescribedAt>
+                </medication>                                            
+            </medications>
+    </patient>        
+    <!-- Add more patient entries as needed -->
+</patients>

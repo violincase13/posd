@@ -1,13 +1,25 @@
-FROM python:3.8
+# backend/Dockerfile
+# Use an official Node.js image with version 18.17.1
+FROM node:18.17.1-alpine
 
+# Set the working directory to /app
 WORKDIR /app
 
-COPY pip_requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+COPY package-lock*.json ./
 
+# Install app dependencies
+RUN npm install
+
+# Copy the rest of the application code to the working directory
 COPY . .
 
-EXPOSE 5000
-EXPOSE 7000
+# Make port available
+EXPOSE 3001
 
-CMD [ "python3", "main.py" ]
+# Define environment variable
+ENV NODE_ENV=production
+
+# Run server.js when the container launches
+CMD ["node", "server.js"]
